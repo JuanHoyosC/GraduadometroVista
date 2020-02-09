@@ -1,0 +1,11 @@
+.loanding {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 419.19px;
+    background-color: rgba(50, 50, 50, 0.5);
+    margin-top: -419.19px;
+    margin-left: -20px;
+}

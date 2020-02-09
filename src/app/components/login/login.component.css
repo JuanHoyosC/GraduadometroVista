@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+  }
+  
+
+.form {
+    color: rgb(50, 50, 50);
+    background-color: white;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .login {
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  hr{
+    margin-top: 0px;
+    margin-bottom: 2rem;
+  }
+  
+  form .form-group {
+    margin-bottom: 2rem;
+  }
+  
+
+  .form .form-btn{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .form .form-btn:focus {
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+  }

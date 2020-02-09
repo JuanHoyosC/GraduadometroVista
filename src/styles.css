@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background: linear-gradient(90deg, #2b5876, #4e4376);
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--background);
+  }
+  

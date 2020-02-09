@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GraduadoMetro';
+  view: boolean = false
+  data = []
+  displayCounter(e) {
+    this.data = []
+    this.data = e
+    this.view = true
+  }
 }

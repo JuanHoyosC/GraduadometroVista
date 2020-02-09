@@ -1,0 +1,24 @@
+<section class="main">
+    <h3 class="user text-center text-secondary">!Bienvenido {{name}}</h3>
+    <p class="data-user"> Su estado academigo es: <span class="text-danger">{{state}}</span></p>
+    <p class="data-user">Su porcentaje de materias aprobadas es: <span class="text-danger">{{percent}}</span></p>
+
+    <select class="custom-select select" [(ngModel)]="option" (change)="choose()">
+        <option *ngFor = "let semester of tableSemester" >{{semester[0].semester}}</option>
+    </select>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Materia</th>
+                <th scope="col" class="text-center">Cumplida</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let subject of tableSubjects">
+            <tr>
+                <td>{{subject.subject}}</td>
+                <td class="text-center" >{{subject.completed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
