@@ -1,7 +1,18 @@
 <section class="main">
+    <p class="float-right text-danger cerrar" (click) ="close()"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
     <h3 class="user text-center text-secondary">!Bienvenido {{name}}</h3>
-    <p class="data-user"> Su estado academigo es: <span class="text-danger">{{state}}</span></p>
-    <p class="data-user">Su porcentaje de materias aprobadas es: <span class="text-danger">{{percent}}</span></p>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <p class="data-user"> Su estado academigo es: <span class="text-danger">{{state}}</span></p>
+            <p class="data-user">Su porcentaje de materias aprobadas es: <span class="text-danger">{{percent}}</span></p>
+            <p class="data-user">Creditos aprobados hasta la fecha: <span class="text-danger">{{credits}}</span></p>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <p class="data-user">Puntos hasta la fecha: <span class="text-danger">{{points}}</span></p>
+            <p class="data-user">Promedio acumulado hasta la fecha: <span class="text-danger">{{prom}}</span></p>
+        </div>
+    </div>
 
     <select class="custom-select select" [(ngModel)]="option" (change)="choose()">
         <option *ngFor = "let semester of tableSemester" >{{semester[0].semester}}</option>
@@ -17,7 +28,7 @@
         <tbody *ngFor="let subject of tableSubjects">
             <tr>
                 <td>{{subject.subject}}</td>
-                <td class="text-center" >{{subject.completed}}</td>
+                <td class="text-center" id = "completed" >{{subject.completed}}</td>
             </tr>
         </tbody>
     </table>

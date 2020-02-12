@@ -13,6 +13,6 @@ export class ContentService {
       user: user,
       password: password
     }
-    return this._http.post('http://localhost:3000', dataUser)
+    return this._http.post('http://localhost:3000 ', dataUser)
   }
 }

@@ -1,7 +1,4 @@
-*{
-    box-sizing: border-box;
-  }
-  
+
 
 .form {
     color: rgb(50, 50, 50);
@@ -15,6 +12,7 @@
     box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-bottom: 2rem;
+    box-sizing: border-box;
   }
   
   
@@ -31,6 +29,7 @@
   
   form .form-group {
     margin-bottom: 2rem;
+    width: 100%;
   }
   
 
@@ -41,10 +40,38 @@
     margin-bottom: 2rem;
   }
 
-  .form .form-btn:focus {
-    outline: none;
-  }
+
   
   .btn {
     width: 100%;
+  }
+
+  @media (max-width: 450px) { 
+  
+    form.form {
+      background-color: transparent;
+      color: white;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      border-radius: 0px;
+      padding-left: 0;
+      padding-right: 0;
+     }
+     
+     hr {
+       background-color: white;
+     }
+     
+   }
+
+   @media (max-width: 350px) { 
+  
+    form.form {
+      background-color: transparent;
+      color: white;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      border-radius: 0px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 300px;
+     }
   }

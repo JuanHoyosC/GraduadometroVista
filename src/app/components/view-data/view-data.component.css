@@ -1,10 +1,8 @@
-* {
-    box-bozing: border-box;
-  }
+
   .main {
      background-color: white;
      color: rgb(50, 50, 50);
-     width: 700px;
+     width: 850px;
      height: 419.19px;
      margin-left: auto;
      margin-right: auto;
@@ -14,12 +12,16 @@
      border-radius: 5px;
      padding: 30px;
      overflow-y: scroll;
+     overflow-x: auto;
+     box-bozing: border-box;
   }
+  
   
   .user {
     font-weight: 200;
     margin: 0;
     margin-bottom: 1rem;
+    clear: both;
   }
   
   .data-user, .select {
@@ -27,3 +29,45 @@
     margin-bottom: 1rem;
   }
   
+  p.cerrar:hover {
+    color: rgba(220, 53, 93, 1) !important;
+    border-bottom: 1px solid rgba(220, 53, 93, 0.9);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 854px) {
+    .main {
+      width: 100%;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      border-radius: 0px;
+      padding: 10px;
+    }
+
+    .user {
+      font-size: 1.5rem;
+    }
+
+    table {
+        width:100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+
+
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}

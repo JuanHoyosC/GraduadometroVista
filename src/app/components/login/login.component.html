@@ -1,11 +1,10 @@
-
-<div class="alert alert-danger text-center" role="alert" *ngIf = "alert">
-    A simple danger alert—check it out!
+<div class="alert alert-danger text-center" role="alert" *ngIf="alert">
+    {{mensaje}}
 </div>
-<form class="form" *ngIf = "form">
+<form class="form" *ngIf="form">
 
     <h1 class="text-center login">Login</h1>
-    
+
     <hr>
 
     <div class="form-group">
@@ -18,11 +17,15 @@
         <input type="password" class="form-control" #password>
     </div>
 
-    <div class="form-btn">
-        <button type ="button" class="btn btn-info" (click) = "login()">Entrar</button>  
+    <div class="form-btn" *ngIf="!loading">
+        <button type="button" class="btn btn-info" (click)="login()">Entrar</button>
     </div>
 
-   
-    <app-loanding *ngIf = "loading"></app-loanding>
-</form>
+    <div class="form-btn" *ngIf="loading">
+        <button class="btn btn-info" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+    </div>
 
+</form>

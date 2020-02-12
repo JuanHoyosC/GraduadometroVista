@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './components/app/app.component';
 import { LoginComponent } from './components/login/login.component';
-import { LoandingComponent } from './components/loanding/loanding.component';
 import { ViewDataComponent } from './components/view-data/view-data.component';
 
 
@@ -15,7 +14,6 @@ import { ViewDataComponent } from './components/view-data/view-data.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    LoandingComponent,
     ViewDataComponent
   ],
   imports: [
